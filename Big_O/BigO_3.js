@@ -9,3 +9,5 @@ const logArrayPairs = (array) => {
 }
 
 logArrayPairs(boxes);
+
+// O(n^2)

@@ -7,6 +7,7 @@ const printItems = (items) => {
 		console.log(items[index]);
 		index++
 	}
+	
 
 	for (let i = 0; i < 100; i++){
 		console.log('hi')

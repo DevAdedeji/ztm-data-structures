@@ -21,6 +21,7 @@ const array2 = ['z', 'a', 'j']
 // }
 
 //This runs but runs at O(a*b)... since the arays might not always contain the same number of elements, not the most efficient approach.
+// Space space complexity of O{1}
 
 // const arrayCheck = (arr1, arr2) => {
 // 	// Loop through first array and create object where property === items in the array
@@ -40,6 +41,7 @@ const array2 = ['z', 'a', 'j']
 // 	return false
 // }
 // This runs in linear time which is O(n) or O(a+b) in the case of this function.
+// Space complexity of O(a)... faster time complexity but heavier space complexity
 
 
 //Clean code up

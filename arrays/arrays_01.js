@@ -6,3 +6,5 @@ strings.unshift('x') //O(n). Adds element to the start of the array. Loops throu
 
 strings.splice(2, 0, 'hi!') //Removes everything from the given index and adds a new element if specified. O(n/2) in this case. But assuming worst case in big O, we do O(n).
 console.log(strings)
+
+//Static and dynamic arrays.

@@ -53,3 +53,5 @@ newArray.push('test')
 newArray.delete(0);
 
 console.log(newArray);
+
+//Strings are an array of characters

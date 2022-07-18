@@ -21,7 +21,7 @@ console.log(user)
 
 // New in ES6
 // A map is different from an object because it allows you to save any data type as the key. An object only allows saving tyhe key as a string.
-// A maintains insertion order.
+// A map maintains insertion order.
 const a = new Map()
 const b = new Set()
 

@@ -30,18 +30,31 @@ class HashTable {
 		const currentBucket = this.data[address];
 		console.log(currentBucket);
 		if (currentBucket) {
-			for(let i = 0; i < currentBucket.length; i++){
-				if (currentBucket[i][0] === key){
+			for (let i = 0; i < currentBucket.length; i++) {
+				if (currentBucket[i][0] === key) {
 					return currentBucket[i][1]
 				}
 			}
 		} //0(1)
 		return undefined;
 	}
+
+	keys() {
+		const keysArray = [];
+		for (let i = 0; i < this.data.length; i++) {
+			if (this.data[i]) {
+				keysArray.push(this.data[i][0][0])
+			}
+		}
+		return keysArray;
+	}
 }
 
 const myHashTable = new HashTable(50);
-console.log(myHashTable.set('grapes', 10000))
-console.log(myHashTable.get('grapes'))
+// console.log(myHashTable.set('grapes', 10000))
+// console.log(myHashTable.get('grapes'))
+myHashTable.set('grapes', 15)
 myHashTable.set('apples', 9)
+myHashTable.set('oranges', 3)
 myHashTable.get('apples')
+console.log(myHashTable.keys())

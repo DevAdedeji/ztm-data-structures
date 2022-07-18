@@ -14,7 +14,7 @@ let user = {
 }
 
 console.log(user.age) // O(1) Reading
-user.scream('haaaa') // Insertion O(1)
+user.scream = 'haaaa' // Insertion O(1)
 console.log(user)
 
 // Objects in javascript only allow strings. If passed a value of any other type, it gets stringified

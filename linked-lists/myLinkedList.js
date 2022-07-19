@@ -18,7 +18,7 @@ let myLinkedList = {
 }
 
 class LinkedList {
-	constructor(value){
+	constructor(value) {
 		this.head = {
 			value: value,
 			next: null
@@ -27,7 +27,7 @@ class LinkedList {
 		this.length = 1;
 	}
 
-	append(value){
+	append(value) {
 		const newNode = {
 			value: value,
 			next: null
@@ -35,9 +35,14 @@ class LinkedList {
 		this.tail.next = newNode;
 		this.tail = newNode
 		this.length++
+		return this
+	}
+	prepend(value) {
+		
 	}
 }
 
-const myLinkedList2 = new LinkedList(10);
-myLinkedList.append(5)
+const myLinkedList2 = new LinkedList(14);
+myLinkedList2.append(7)
+myLinkedList2.append(5)
 console.log(myLinkedList2)

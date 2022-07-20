@@ -90,6 +90,24 @@ class LinkedList {
 	}
 	// O(N)
 
+	reverse(){
+		if (!this.head.next){
+			return this.head
+		}
+		let first = this.head;
+		this.tail = this.head;
+		let second = first.next;
+		while(second){
+			const temp = second.next;
+			second.next = first;
+			first = second;
+			second = temp;
+		}
+		this.head.next = null;
+		this.head = first;
+		return this.printList();
+	}
+
 
 	traverseToIndex(index) {
 		let counter = 0;
@@ -111,4 +129,4 @@ myLinkedList2.append(5)
 myLinkedList2.insert(2, 48)
 myLinkedList2.remove(2)
 
-console.log(myLinkedList2.printList())
+console.log(myLinkedList2.reverse())

@@ -80,6 +80,14 @@ class LinkedList {
 		this.length++;
 		return this.printList()
 	}
+
+	remove(index){
+		const leader = this.traverseToIndex(index - 1)
+		const unwantedNode = leader.next;
+		leader.next = unwantedNode.next;
+		this.length--;
+		return this.printList();
+	}
 	// O(N)
 
 
@@ -101,5 +109,6 @@ myLinkedList2.prepend(4)
 myLinkedList2.append(7)
 myLinkedList2.append(5)
 myLinkedList2.insert(2, 48)
+myLinkedList2.remove(2)
 
 console.log(myLinkedList2.printList())

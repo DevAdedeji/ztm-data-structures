@@ -37,12 +37,21 @@ class LinkedList {
 		this.length++
 		return this
 	}
+
 	prepend(value) {
-		
+		const newNode = {
+			value: value,
+			next: null
+		};
+		newNode.next = this.head;
+		this.head = newNode;
+		this.length++
+		return this;
 	}
 }
 
 const myLinkedList2 = new LinkedList(14);
+myLinkedList2.prepend(4)
 myLinkedList2.append(7)
 myLinkedList2.append(5)
 console.log(myLinkedList2)

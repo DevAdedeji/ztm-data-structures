@@ -1,4 +1,3 @@
-// Heaps are also referred to as tries
 // Binary heaps have every child belonging to a parent node that has a higher prority
 
 // A max heap has the root node value as the highest value
@@ -17,6 +16,19 @@
 // The highest value bubbles up the node tree.
 
 // P.S: Memory heaps != heap data structure.
-// Heap in terms of memory is a region where arbitrary data can be stored in memory.
+// Heap in terms of memory is a region where arbitrary data can be stored in memory. Naming is coincidatal. Heap in terms of memory is a 'heap of memory'
+
 
 // To understand how binary heaps work, we have to talk about priority queues.
+// Heaps take the lowest amount of space posssible due to left to right insertion
+// There's no concept of an unbalanced heap. They preserve the order of insertion.
+
+// Priority queues is a type of data where each data has a priority and elements with higher pririty are served before elements with lower priority.
+
+// Binary heap pros: Better than O(n)
+// allows setting priorities
+// Flexible size
+// Fast insert
+
+// Cons
+// Slow lookup

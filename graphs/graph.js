@@ -30,3 +30,5 @@
 // Acyclic dosen't allow that.
 // Cyclic graphs are especially common in weighted graphs, such as google maps.
 // Since there is a way to get back most of the time
+
+// DIRECTED ACYCLIC GRAPHS ARE COMMONLY CALLED DAGs

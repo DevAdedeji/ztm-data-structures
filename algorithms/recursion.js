@@ -59,3 +59,11 @@ console.log(recursive1())
 
 // Tail call optimization can allow recursive functions to be written without increasing the call stack
 // https://2ality.com/2015/06/tail-call-optimization.html
+
+// When to use recursiom:
+// Recursion is useful when dealing with complicated problems like traversing through trees or graphs like DFS nd BFS
+
+// When using a tree or converting to a tree, consider recursion
+// Recursion makes tasks easier.
+
+// Divide and conquer using recursion.

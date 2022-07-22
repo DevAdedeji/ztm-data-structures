@@ -37,3 +37,25 @@ console.log(recursive1())
 // 1: Identify the base case
 // 2: identify the recursive case
 // 3: Get closer and closer and return when needed. Uusally 2 returns for the base case and the recursive case.
+
+// Recursion vs Iterative approach
+// Anything that can be implemented recursively can also be done iteratively with a loop
+
+// There are times where recursion can keep code DRY
+// Recursion is usually not always the best approach
+
+// Pros:
+// DRY
+// Readabilty
+
+// Cons
+// Large stack
+
+// Iterative approaches might be less readable bit more efficient
+// They dont require creating more function calls on the call stack.
+
+// Recursdon is best used when working with data structures with unknown depth.
+// Recursion is useful with tree data structures and traversal.
+
+// Tail call optimization can allow recursive functions to be written without increasing the call stack
+// https://2ality.com/2015/06/tail-call-optimization.html

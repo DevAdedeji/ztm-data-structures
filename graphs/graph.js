@@ -32,3 +32,7 @@
 // Since there is a way to get back most of the time
 
 // DIRECTED ACYCLIC GRAPHS ARE COMMONLY CALLED DAGs
+
+// Graph pros and cons
+// Graphs are really useful when it comes to relationships in data
+// Scaling a graph can be pretty hard.

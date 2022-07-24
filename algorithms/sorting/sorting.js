@@ -44,3 +44,23 @@ Output: "eert"
 // There's tradeoffs with sorting in regards to space and time complexity
 // It's important to know when to use what algorithm
 // https://www.toptal.com/developers/sorting-algorithms
+
+// When to use sorting algorithms
+// Insertion sort should be used with only a few sort
+
+// Bubble sort
+// Bubble sort is not very efficient, it's only mostly used for educational purposes.
+
+// Selection sort
+// Selection sort isnat s efficient as well. It is mostly for teaching purposes.
+
+//  Merge sort
+// Merge sort is good because of divide and conquer
+// Divide up the list evenly
+// If worred about worst case scenarios, use merge sort
+
+// Huge files and external sorting is also merge sort
+
+// Quick sort is better tahna merge sort in terms of time and space complexity.
+
+// Slow sorting algorith with really bad worst case scenario

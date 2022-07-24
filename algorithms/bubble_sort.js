@@ -17,3 +17,22 @@
 // Average time complexity = O(n^2)
 // Worst time complexity = O(n^2)
 // Space complexity = O(1) since no new data structures are being created
+
+const numbers = [39, 44, 5, 47, 2, 15, 2, 45, 20, 96]
+
+const bubbleSort = arr => {
+	const length = arr.length;
+	for (let i = 0; i < length; i++) {
+		for (j = 0; j < length; j++) {
+			if (arr[j] > arr[j + 1]) {
+				// Swap numbers
+				let temp = arr[j];
+				arr[j] = arr[j + 1];
+				arr[j + 1] = temp;
+			}
+		}
+	}
+}
+
+bubbleSort(numbers);
+console.log(numbers)

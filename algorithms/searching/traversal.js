@@ -13,3 +13,5 @@
 // The main benefit of why we dont put complex data into jsut lists that are sorted is that we get the O(log n) searching.
 
 // Trees and graphs work well for lots of cases. And there's better performance for something like an array.
+
+// DFS vs BFS

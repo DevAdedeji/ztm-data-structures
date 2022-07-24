@@ -15,3 +15,24 @@
 // Trees and graphs work well for lots of cases. And there's better performance for something like an array.
 
 // DFS vs BFS
+// Both DFS and BFS do the same thing, technically. When should one be chosen over the other.
+
+// The time complexity for DFS and BFS is the same. They all visit the nodes at least once.
+// Breadth first search. Pros 
+// Shortest Path.
+// Closer nodes.
+
+// Cons.
+// Consumes More Memory.
+
+// We always start off with the root node and search the closest nodes.
+// If there's additional information. Then breadth first search.
+
+// Depth First Search. Pros
+// Depth first search consumes less memory.
+// Graet for finding out if path exists
+
+// Cons
+// Can get slow
+
+// https://stackoverflow.com/questions/9844193/what-is-the-time-and-space-complexity-of-a-breadth-first-and-depth-first-tree-tr

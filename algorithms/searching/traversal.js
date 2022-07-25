@@ -54,3 +54,13 @@
 
 //Finding the shortest path
 // BFS
+
+// Graphs are used to model real life scenarios
+// Recommendation engines for example, peer to peer networks etc
+
+// BFS in graphs
+// BFS allow us to convert a graph into a tree
+// Also helps determine the shortest path...
+
+// DFS in graphs
+// 

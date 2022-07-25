@@ -28,3 +28,17 @@ console.log('DP', fasterFib(10))
 // this function can be optimized with dynamic programming or memoization.
 
 // Dynamic programming combines divide abd conquer and memoization.
+
+// https://leetcode.com/problems/house-robber
+// https://leetcode.com/problems/best-time-to-buy-and-sell-stock
+// https://leetcode.com/problems/climbing-stairs
+
+// Bottom up approach
+const memoFibonacci2 = n => {
+	let answer = [0, 1]
+	for (let i = 2; i <= n; i++){
+		answer.push(answer[i-2] + answer[i-1]);
+	}	
+}
+
+// This avoids recursion, starts from the simplest and works way up.

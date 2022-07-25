@@ -7,21 +7,25 @@
 
 const addNumber = n => n + 65;
 
-let cache = {
-	5: 85
-};
 
 const memoAddNumber = n => {
-	if (n in cache){
-		return cache[n]
-	}
-	// this checks if a property exists in an object in javascript
-	else {
-		console.log('this takes a while')
-		cache[n] = n + 80;
-		return cache[n]
+	let cache = {
+		5: 85
+	};
+	return n => {
+		if (n in cache) {
+			return cache[n]
+		}
+		// this checks if a property exists in an object in javascript
+		else {
+			console.log('this takes a while')
+			cache[n] = n + 80;
+			return cache[n]
+		}
 	}
 }
+
+const memoized = memoAddNumber()
 
 console.log(memoAddNumber(4))
 console.log(memoAddNumber(4))
@@ -29,3 +33,11 @@ console.log(memoAddNumber(4))
 // Mmeoization is a specific form of caching that involves caching the return value.
 
 // Memoization remembers a sub problem so it dosent have to be calculated again
+
+// Ideally, it's good to have the cache inside the function and not polluting the global scope.
+
+// But everytime the memoAddNumber function runs, the cache gets reset. And becomes an empty object.
+
+// Uses closures to access cache inside the child function. This helps avoid polluting the global scope
+
+// Dymanic programming helps used memoization for code optimization.

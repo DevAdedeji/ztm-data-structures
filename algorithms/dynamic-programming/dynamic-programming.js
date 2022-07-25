@@ -1,0 +1,2 @@
+// dynamic programming is an optimization technique using caching
+// It's a buzzword. Dynamic programming is a way to solve problems by breaking it down into a collection of sub problems solving each of the sub problems just once and saving the solutions in case we have to solve them again
